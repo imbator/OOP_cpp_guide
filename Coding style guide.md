@@ -104,7 +104,7 @@ public:
 void function() {
   int variable = 0;
   ...
-};
+}
 ```
 
 В данном примере `a_local_variable` - *переменная*, объявленная внутри функции `function`. Обратите внимание на ее имя: **использованы строчные буквы, переменная начинается с маленькой буквы.** 
@@ -112,9 +112,9 @@ void function() {
 
 ```cpp
 void another_function() {
-  std::string local_variable = "local_variable;
+  std::string local_variable = "local_variable";
   ...
-};
+}
 ```
 Cтиль оформления **нижнее_подчеркивание** даже имеет свое название - `snake_case`.
 
@@ -372,17 +372,18 @@ void helloWorld(std::string name) {
 
 `.'h'`
 ```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+
 class Figure {
-public:
-  #include <iostream>
-  #include <string>
-  #include <vector>
-  
+public: 
   Figure(std::string shape, int id); // Конструктор класса
   ~Figure() {}  // Деструктор класса
   void paintFigure(); // Функция отрисовки фигуры (только обьявляется)
   void setColor(); // Функция-сеттер (только обьявляется)
   int getColor(); // функция-геттер (только обьявляется)
+
 private:
   // Атрибуты класса (форма, номер,)
   std::string shape_
